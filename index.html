@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice HTML</title>
+</head>
+<body>
+<table cellspacing="15"> <!--add some space but deprecated, use css-->
+    <tr>
+        <td><img src="images.png" width="200" alt="here is picture"></td>
+        <td>
+            <h1>Daniil Verin</h1>
+            <p><em>From Russia</em></p>
+            <p>25 y.o</p>
+            <p><strong>Live in Buenos Aires</strong></p>
+        </td>
+    </tr>
+</table>
+
+<hr>
+
+<h2>My social networks</h2>
+<ul type="square">
+    <li><a href="https://instagram.com/da_ni_il_98" target="_blank">Instagram</a></li> <!--target - help open link in a new tab-->
+    <li><a href="https://t.me/DaniilVI">Telegram</a></li>
+</ul>
+
+<hr>
+
+<h2>Web</h2>
+<ol>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JS</li>
+</ol>
+
+<hr>
+
+<h2>Knowledge</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Languages</th>
+            <th>Frameworks</th>
+            <th>Library</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Java</td>
+            <td>Maven</td>
+            <td>Selenide</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>Node.js</td>
+            <td>Playwright</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+
+<h2>My LinkedIn</h2>
+<a href="linkedIn.html">Look</a> <!--transfer to another site-->
+
+<hr>
+
+<h2>Contact</h2>
+<form action="/">
+    <label for="name">Your name:</label> <!--for - help us to click straight to text-->
+    <input type="text" id="name" placeholder="Input your name..."><br>
+
+    <label for="email">Your Email:</label>
+    <input type="text" id="email" placeholder="Input your email..."><br>
+
+    <label for="text">Your text:</label><br>
+    <textarea name="" id="text" cols="30" rows="5"></textarea><br>
+
+    <input type="submit" value="Contact">
+</form>
+</body>
+</html>
