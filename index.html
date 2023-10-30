@@ -3,81 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <title>Practice HTML</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<table cellspacing="15"> <!--add some space but deprecated, use css-->
-    <tr>
-        <td><img src="images.png" width="200" alt="here is picture"></td>
-        <td>
+<div class="container">
+    <div class="info">
+        <img src="images.png" alt="here is picture" class="picture">
+        <div class="info-text">
             <h1>Daniil Verin</h1>
-            <p><em>From Russia</em></p>
+            <p>From Russia</p>
             <p>25 y.o</p>
             <p><strong>Live in Buenos Aires</strong></p>
-        </td>
-    </tr>
-</table>
 
-<hr>
+            <h4>My social networks</h4>
+            <a href="https://instagram.com/da_ni_il_98" target="_blank">Instagram</a>
+            <!--target - help open link in a new tab-->
+            |
+            <a href="https://t.me/DaniilVI">Telegram</a>
+        </div>
+    </div>
 
-<h2>My social networks</h2>
-<ul type="square">
-    <li><a href="https://instagram.com/da_ni_il_98" target="_blank">Instagram</a></li> <!--target - help open link in a new tab-->
-    <li><a href="https://t.me/DaniilVI">Telegram</a></li>
-</ul>
+    <div class="card bg-yellow">
+        <h2>Web</h2>
+        <ol class="list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ol>
+    </div>
 
-<hr>
+    <div class="card bg-green">
+        <h2>Knowledge</h2>
+        <table class="table">
+            <tbody>
+            <tr>
+                <td>Java</td>
+                <td>Maven</td>
+                <td>Selenide</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Node.js</td>
+                <td>Playwright</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Node.js</td>
+                <td>HTML, CSS, JS</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 
-<h2>Web</h2>
-<ol>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JS</li>
-</ol>
+    <div class="card bg-red">
+        <h2>My LinkedIn</h2>
+        <ul class="link-list">
+            <li>
+                <a href="https://www.linkedin.com/in/daniil-verin-55a969237/">LinkedIn</a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/daniil.verin/">Facebook</a>
+            </li>
+        </ul>
+    </div>
 
-<hr>
+    <div class="contact">
+        <h2>Contact</h2>
+        <form action="/">
+            <div class="row">
+                <div class="form-group">
+                    <label for="name">Your name:</label> <!--for - help us to click straight to text-->
+                    <input type="text" id="name" placeholder="Input your name...">
+                </div>
+                <div class="form-group">
+                    <label for="email">Your email:</label>
+                    <input type="text" id="email" placeholder="Input your email...">
+                </div>
+            </div>
 
-<h2>Knowledge</h2>
-<table>
-    <thead>
-        <tr>
-            <th>Languages</th>
-            <th>Frameworks</th>
-            <th>Library</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Java</td>
-            <td>Maven</td>
-            <td>Selenide</td>
-        </tr>
-        <tr>
-            <td>JavaScript</td>
-            <td>Node.js</td>
-            <td>Playwright</td>
-        </tr>
-    </tbody>
-</table>
+            <div class="form-group">
+                <label for="text">Your text:</label>
+                <textarea name="" id="text" cols="15" rows="2"></textarea>
+            </div>
 
-<hr>
+            <input class="btn" type="submit" value="Contact">
+        </form>
+    </div>
 
-<h2>My LinkedIn</h2>
-<a href="linkedIn.html">Look</a> <!--transfer to another site-->
+    <div class="position">
+        <div class="box"></div>
+    </div>
 
-<hr>
-
-<h2>Contact</h2>
-<form action="/">
-    <label for="name">Your name:</label> <!--for - help us to click straight to text-->
-    <input type="text" id="name" placeholder="Input your name..."><br>
-
-    <label for="email">Your Email:</label>
-    <input type="text" id="email" placeholder="Input your email..."><br>
-
-    <label for="text">Your text:</label><br>
-    <textarea name="" id="text" cols="30" rows="5"></textarea><br>
-
-    <input type="submit" value="Contact">
-</form>
+    <!--<div class="box-model">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>-->
+</div>
+<!--<div style="margin-bottom: 500px"></div>-->
 </body>
 </html>
